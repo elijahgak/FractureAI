@@ -1,0 +1,39 @@
+# Project Information
+PROJECT_NAME           = "AI-Enhanced Fracture Mechanics Simulation"
+PROJECT_BRIEF          = "Simulation software to model crack growth in 3D structures with AI integration."
+OUTPUT_DIRECTORY       = docs/doxygen
+INPUT                  = src include docs
+FILE_PATTERNS          = *.cpp *.h *.py *.md
+
+# Enable documentation extraction from all files
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# Generate HTML output for viewing in browsers
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+
+# Enable LaTeX for equation support and MathJax for web rendering of equations
+GENERATE_LATEX         = YES
+USE_MATHJAX            = YES
+
+# Diagrams and call graphs to visualize the structure
+HAVE_DOT               = YES
+DOT_PATH               = /usr/bin/dot  # Ensure Graphviz is installed
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+
+# Add logos, graphs, and images
+PROJECT_LOGO           = docs/logo.png  # Optional logo for the project
+
+# Document hierarchical structure
+FULL_PATH_NAMES        = YES
+SHOW_INCLUDE_FILES     = YES
+
+# List directories and files
+SHOW_FILES             = YES
+SHOW_DIRECTORIES       = YES
+
+# Define the classes and modules
+OPTIMIZE_OUTPUT_FOR_C  = YES  # Since you're using C++ and Python
