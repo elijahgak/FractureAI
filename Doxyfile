@@ -25,7 +25,7 @@ CALL_GRAPH             = YES
 CALLER_GRAPH           = YES
 
 # Add logos, graphs, and images
-PROJECT_LOGO           = docs/logo.png  # Optional logo for the project
+PROJECT_LOGO           = docs/FractureAI.png  # Optional logo for the project
 
 # Document hierarchical structure
 FULL_PATH_NAMES        = YES
