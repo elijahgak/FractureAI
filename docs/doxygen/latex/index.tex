@@ -1,0 +1,63 @@
+\chapter{AI-\/\+Enhanced Fracture Mechanics Simulation}
+\hypertarget{index}{}\label{index}\index{AI-\/Enhanced Fracture Mechanics Simulation@{AI-\/Enhanced Fracture Mechanics Simulation}}
+\label{index_md_docs_2mainpage}%
+\Hypertarget{index_md_docs_2mainpage}%
+ \hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Overview}{Overview}}\label{index_autotoc_md1}
+This software aims to simulate {\bfseries{3D crack growth}} in structures using {\bfseries{Finite Element Methods (FEM)}} and integrates {\bfseries{AI}} to enhance fracture prediction and optimize simulations. The software offers the ability to {\bfseries{import models}} from industry-\/standard tools such as NX, Abaqus, ANSYS, and Nastran, providing users with seamless workflow integration.\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Key Features}{Key Features}}\label{index_autotoc_md2}
+
+\begin{DoxyItemize}
+\item {\bfseries{AI Integration}}\+: Use machine learning models to predict crack propagation and optimize simulation parameters.
+\item {\bfseries{Finite Element Analysis}}\+: Leverages the {\bfseries{deal.\+II}} library for FEM, ensuring efficient and accurate simulations.
+\item {\bfseries{Multi-\/\+Platform Model Import}}\+: Supports importing models from NX, Abaqus, ANSYS, and Nastran.
+\item {\bfseries{Documentation}}\+: Follows a well-\/structured documentation style similar to {\bfseries{deal.\+II}}, with detailed equations, algorithms, and explanations.
+\end{DoxyItemize}\hypertarget{index_autotoc_md3}{}\doxysection{\texorpdfstring{Model Import Capabilities}{Model Import Capabilities}}\label{index_autotoc_md3}
+This software allows users to import models from\+:
+\begin{DoxyItemize}
+\item {\bfseries{Abaqus}}\+: {\ttfamily .inp} files for geometry, mesh, and material properties.
+\item {\bfseries{Nastran}}\+: {\ttfamily .bdf}, {\ttfamily .dat} files.
+\item {\bfseries{ANSYS}}\+: {\ttfamily .cdb}, {\ttfamily .dat} files.
+\item {\bfseries{NX}}\+: {\ttfamily .prt}, {\ttfamily .fem}, {\ttfamily .sim} files.
+\end{DoxyItemize}\hypertarget{index_autotoc_md4}{}\doxysection{\texorpdfstring{Fracture Mechanics Algorithms}{Fracture Mechanics Algorithms}}\label{index_autotoc_md4}
+Fracture mechanics algorithms implemented include\+:
+\begin{DoxyItemize}
+\item {\bfseries{Paris Law}}\+: For fatigue crack growth analysis.
+\item {\bfseries{Stress Intensity Factor (SIF)}}\+: For calculating crack growth thresholds.
+\item {\bfseries{Cohesive Zone Models}}\+: Advanced fracture mechanics techniques for crack propagation.
+\end{DoxyItemize}\hypertarget{index_autotoc_md5}{}\doxysection{\texorpdfstring{AI Capabilities}{AI Capabilities}}\label{index_autotoc_md5}
+The software leverages {\bfseries{machine learning}} to\+:
+\begin{DoxyItemize}
+\item Predict crack initiation and growth.
+\item Automatically optimize mesh refinement and simulation parameters.
+\item Reduce computational load while maintaining accuracy.
+\end{DoxyItemize}\hypertarget{index_autotoc_md6}{}\doxysection{\texorpdfstring{GUI and User Interface}{GUI and User Interface}}\label{index_autotoc_md6}
+A modern, user-\/friendly {\bfseries{GUI}} allows users to\+:
+\begin{DoxyItemize}
+\item Easily import models.
+\item Customize simulation parameters.
+\item View AI-\/driven predictions and optimizations.
+\end{DoxyItemize}\hypertarget{index_autotoc_md7}{}\doxysection{\texorpdfstring{How to Set Up and Use}{How to Set Up and Use}}\label{index_autotoc_md7}
+
+\begin{DoxyItemize}
+\item {\bfseries{Clone the repository}}\+: Download the software and run on {\bfseries{Ubuntu}} 24.\+04.\+01.
+\item {\bfseries{Run Doxygen}}\+: Generate documentation using Doxygen.
+\item {\bfseries{View Results}}\+: View the crack growth simulations in real-\/time, with AI predictions and optimizations displayed in a clear, visual format.
+\end{DoxyItemize}\hypertarget{index_autotoc_md8}{}\doxysection{\texorpdfstring{System Requirements}{System Requirements}}\label{index_autotoc_md8}
+
+\begin{DoxyItemize}
+\item {\bfseries{Operating System}}\+: Ubuntu 24.\+04.\+01
+\item {\bfseries{Hardware}}\+: Intel 12th Gen 12300K CPU, NVIDIA RTX A4000 GPU, 32GB RAM (upgradable to 64GB).
+\item {\bfseries{Software Dependencies}}\+:
+\begin{DoxyItemize}
+\item {\bfseries{deal.\+II}} for FEM.
+\item {\bfseries{Python}} for AI integration.
+\item {\bfseries{Git\+Hub Pages}} for documentation hosting.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+
+
+This content will provide a detailed overview of the project and explain its features, capabilities, and how it works.\hypertarget{index_autotoc_md10}{}\doxysubsection{\texorpdfstring{Step 3\+: Link the Main Page in the $<$tt$>$\+Doxyfile$<$/tt$>$}{Step 3: Link the Main Page in the <tt>Doxyfile</tt>}}\label{index_autotoc_md10}
+In the {\bfseries{Doxyfile}}, set this Markdown file as the main page\+:
+
+\`{}\`{}\`{}bash USE\+\_\+\+MDFILE\+\_\+\+AS\+\_\+\+MAINPAGE = \doxylink{mainpage_8md}{docs/mainpage.\+md} 
